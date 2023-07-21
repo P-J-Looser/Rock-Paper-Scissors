@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/title-card.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <link rel="stylesheet" href="styles/rules.css">
+
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+
+  <section class="content">
+
+    <div class="title-card flex">
+      <div class="title flex">
+        <div class="logo flex">
+          <img src="images/logo.svg">
+        </div>
+        <div class="score-card flex">
+          <p>SCORE</p>
+          <p class="score">12</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game flex">
+
+      <div class="play-game">
+
+        
+        <div class="bg-image">
+          <img src="images/bg-triangle.svg" alt="bacground-triangle-image">
+        </div>
+        <div class="paper flex">
+          <img src="images/icon-paper.svg">
+        </div>
+        <div class="scissors flex">
+          <img src="images/icon-scissors.svg">
+        </div>
+        <div class="rock third flex">
+          <img src="images/icon-rock.svg">
+        </div>
+
+      </div>
+
+      <div class="in-game flex not-active">
+
+        <div class="play">
+
+          <div class="in-play flex">
+
+            <div class="move">
+          
+              <div class="player-pick paper flex winner">
+                <img src="images/icon-paper.svg">
+              </div>
+
+              <div class="info-text">
+                <p>YOU PICKED</p>
+              </div>
+
+            </div>
+
+            <div class="move">
+
+              <div class="comp-picK rock flex">
+                <img src="images/icon-rock.svg">
+              </div>
+
+              <div class="info-text">
+                <p>THE HOUSE PICKED</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="game-info flex">
+
+            <div class="result display-result flex">
+              <p class="game-result">YOU LOSE</p>
+              <p class="play-again">PLAY AGAIN</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="info flex">
+
+      <div class="rules">
+        <p>RULES</p>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+
+     
+      
+    </div>
+  </section>
+
+  
+</body>
+</html>

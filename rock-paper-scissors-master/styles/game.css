@@ -1,0 +1,182 @@
+.game {
+    position: relative;
+}
+
+.play-game {
+    width: 90%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    z-index: -2;
+}
+
+.play-game > .bg-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    z-index: -2;
+}
+
+.play-game > .bg-image > img {
+    width: 100%;
+}
+
+.play-game > div:not(.bg-image,.result) {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 0.25rem 0 var(--light-shadow);
+}
+
+.play-game > div:not(.bg-image,.result)::before {
+    content: '';
+    position: absolute;
+    width: 135%;
+    height: 135%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.play-game > div > img {
+    width: 35px;
+}
+
+.display-result {
+    grid-column: span 2;
+}
+
+.paper::before {
+    background: linear-gradient(var(--paper-grad1),var(--paper-grad2));
+    box-shadow: 0 0.25rem 0 var(--dark-shadow), 0 0.25rem 0 var(--paper-grad2);
+}
+
+.scissors::before {
+    background: linear-gradient(var(--scissors-grad1),var(--scissors-grad2));
+    box-shadow: 0 0.25rem 0 var(--dark-shadow), 0 0.25rem 0 var(--scissors-grad2);
+}
+
+.rock::before {
+    background: linear-gradient(var(--rock-grad1),var(--rock-grad2));
+    box-shadow: 0 0.25rem 0 var(--dark-shadow), 0 0.25rem 0 var(--rock-grad2);
+}
+
+.third {
+    grid-column: span 2;
+}
+
+.not-active {
+    display: none;
+}
+
+.in-game {
+    width: 100%;
+    height: 100%;
+}
+
+.in-game > .play {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+
+.in-game > .play >.in-play {
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+.move {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.move > div:not(.info-text) {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 0.25rem 0 var(--light-shadow);
+}
+
+.move > div:not(.info-text)::before {
+    content: '';
+    position: absolute;
+    width: 135%;
+    height: 135%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.move > div > img {
+    width: 35px;
+}
+
+.move > .info-text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    width: 135px;
+    letter-spacing: 1px;
+}
+
+.in-game > .play > .game-info {
+    height: 35%;
+}
+
+.in-game > .play > .game-info .result {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.in-game > .play > .game-info .result > .game-result {
+    color:#fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.in-game > .play > .game-info .result > .play-again {
+    background: #fff;
+    color: var(--text-dark);
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 0.5rem;
+}
+
+
+.winner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 2rem rgba(255,255,255,0.1), 0 0 0 3.4rem rgba(255,255,255,0.1), 0 0 0 4.6rem rgba(255,255,255,0.15);
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: -2;
+}
+
+
+
+@media (min-width : 426px) {
+    
+}
+
+
+

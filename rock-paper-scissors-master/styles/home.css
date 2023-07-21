@@ -1,0 +1,60 @@
+:root {
+    --mobile-width : 375px;
+    --desktop-width : 1366px;
+    --text-dark : hsl(229, 25%, 31%);
+    --text-score : hsl(229, 58%, 55%);
+    --text-header-outline : hsl(217, 16%, 45%);
+    --bg-grad1 : hsl(214, 47%, 23%);
+    --bg-grad2 : hsl(237, 49%, 15%);
+    --scissors-grad1 : hsl(39, 89%, 49%);
+    --scissors-grad2 : hsl(40, 84%, 53%);
+    --paper-grad1 : hsl(230, 89%, 62%);
+    --paper-grad2 : hsl(230, 89%, 65%);
+    --rock-grad1 : hsl(349, 71%, 52%);
+    --rock-grad2 : hsl(349, 70%, 56%);
+    --light-shadow : rgba(0,0,0,0.15);
+    --dark-shadow : rgba(0,0,0,0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--bg-grad1) ,var(--bg-grad2));
+}
+
+.content {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 20% 65% 1fr;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution { 
+    color: #fff;
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (min-width : 426px) {
+    .content {
+        grid-template-rows: 30% 65% 1fr;
+    }
+}
