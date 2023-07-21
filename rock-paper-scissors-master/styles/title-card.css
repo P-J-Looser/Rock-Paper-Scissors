@@ -65,5 +65,15 @@
         width: 8rem;
         border-radius: 8px;
     }
+
+    .score-card > p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .score-card > .score {
+        height: 3.3rem;
+        font-size: 3.2rem;
+    }
     
 }

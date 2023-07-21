@@ -48,13 +48,31 @@ body {
 }
 
 .attribution a {
-     color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%); 
+}
+
+.not-active {
+    display: none;
+}
+
+.winner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 2rem rgba(255,255,255,0.1), 0 0 0 3.4rem rgba(255,255,255,0.1), 0 0 0 4.6rem rgba(255,255,255,0.15);
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: -2;
 }
 
 
 
 @media (min-width : 426px) {
     .content {
-        grid-template-rows: 30% 65% 1fr;
+        grid-template-rows: 30% 63% 1fr;
     }
+
+
 }
